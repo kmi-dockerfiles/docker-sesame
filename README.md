@@ -18,17 +18,19 @@ When you launch the container a new user and password will be created for the To
 Configuration
 -------------
 
-By default the memory devoted to Sesame is setup to 256 MB. You may configure this using the 'JAVA_MAXMEMORY' environment variable:
+By default the memory devoted to Sesame is setup to 256 MB. You may configure this using the `JAVA_MAXMEMORY` environment variable:
+	
 	docker run -d -p 8080:8080 -e JAVA_MAXMEMORY=512 openuniversity/sesame
 	
-By default Sesame's data will be stored at /data. You may configure this using the 'SESAME_DATA' environment variable:
+By default Sesame's data will be stored at /data. You may configure this using the `SESAME_DATA` environment variable:
+	
 	docker run -d -p 8080:8080 -e SESAME_DATA="/myfolder" openuniversity/sesame
 
 Source
 ------
-The source for this docker contained is [available on GitHub](https://github.com/kmi-dockerfiles/sesame).
+The source for this docker contained is [available on GitHub](https://github.com/kmi-dockerfiles/docker-sesame).
 See [RDF4J.org](http://rdf4j.org) for Sesame's source code.
 
 Issues
 ------
-Please report any issues on [GitHub](https://github.com/kmi-dockerfiles/sesame/issues).
+Please report any issues on [GitHub](https://github.com/kmi-dockerfiles/docker-sesame/issues).
