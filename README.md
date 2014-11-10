@@ -7,7 +7,9 @@ Usage
 -----
 To create the image 'openuniversity/sesame', execute the following command on the docker-sesame folder:  
 
-	docker build -t openuniversity/sesame
+	docker build -t openuniversity/sesame .
+	
+(Note: do not forget to include the final '.' in the line above)
 
 To run the image and bind to port 8080:
 
